@@ -1,0 +1,34 @@
+.telegramContact {
+  .content {
+    .form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 7px 35px;
+      outline: invert;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      &:hover {
+        border: 1px solid #2196f3;
+        transition: border 0.3s ease;
+        padding: 8px 36px;
+      }
+    }
+    button {
+      padding: 10px 25px;
+      background: #3f51b5;
+      border-radius: 15px;
+      color: white;
+
+      &:hover {
+        background: #2196f3;
+        transition: background 0.3s ease;
+      }
+    }
+  }
+}
