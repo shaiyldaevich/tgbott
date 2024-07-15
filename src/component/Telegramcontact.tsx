@@ -10,13 +10,14 @@ interface IformTelegram {
   description: string;
 }
 const Telegramcontact = () => {
-  const { register, handleSubmit } = useForm<IformTelegram>();
+  const { register, handleSubmit, reset } = useForm<IformTelegram>();
   const Token = process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN;
   const ChatId = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID;
   console.log(Token);
   console.log(ChatId);
 
   const onSubmit: SubmitHandler<IformTelegram> = async (data) => {
+    reset();                                                       
     await axios.post(`https://api.telegram.org/bot${Token}/sendMessage`, {
       chat_id: ChatId,
       parse_mode: "html",
@@ -40,22 +41,22 @@ const Telegramcontact = () => {
             <input
               type="text"
               placeholder="username"
-              {...register("username", { required: true })}
+              {...(register("username", { required: true }))}
             />
             <input
               type="text"
               placeholder="email"
-              {...register("email", { required: true })}
+              {...(register("email", { required: true }))}
             />
             <input
               type="text"
               placeholder="subject"
-              {...register("subject", { required: true })}
+              {...(register("subject", { required: true }))}
             />
             <input
               type="text"
               placeholder="description"
-              {...register("description", { required: true })}
+              {...(register("description", { required: true }))}
             />
             <button type="submit">Submit</button>
           </form>
