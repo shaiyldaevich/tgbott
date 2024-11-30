@@ -1,8 +1,8 @@
 <div align="center">
 <!-- <img src="https://elcho911.netlify.app/Elkhan2003-icons/Front-end-DevX.gif"/> -->
 <!-- <img src="https://elcho911.netlify.app/Elkhan2003-icons/madara.gif"/> -->
-<!-- <img src="https://elcho911.netlify.app/Elkhan2003-icons/madara-v2.gif"/> -->
-<img width="800px" height="125px" src="https://elcho911.netlify.app/Elkhan2003-icons/elcho.gif"/>
+<img src="https://elcho911.netlify.app/Elkhan2003-icons/madara-v2.gif"/>
+<!-- <img width="800px" height="125px" src="https://elcho911.netlify.app/Elkhan2003-icons/elcho.gif"/> -->
 </div>
 
 ### Russian Language 🇷🇺:
